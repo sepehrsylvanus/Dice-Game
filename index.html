@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Game</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/1e092a54e7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="body">
+    <div class="container">
+      <button id="themeToggler" class="themToggler"><i class="fa-solid fa-power-off"></i></button>
+      <h1 id="message" class="texts">Player 1 Turn</h1>
+      <div class="players">
+        <div id="player1" class="scoreBoards">
+          <h1 class="texts">
+            Score:
+            <span id="player1Scoreboard">0</span>
+          </h1>
+          <div id="player1Dice" class="dice active"></div>
+        </div>
+        <div id="player2" class="scoreBoards">
+          <h1 class="texts">
+            Score:
+            <span class="scoreboard" id="player2Scoreboard">0</span>
+          </h1>
+          <div id="player2Dice" class="dice"></div>
+        </div>
+      </div>
+
+      <button class="btn" id="rollBtn">Roll Dice 🎲</button>
+      <button class="btn" id="resetBtn">Reset Game 🔁</button>
+    </div>
+    <script src="./app/main.js"></script>
+  </body>
+</html>

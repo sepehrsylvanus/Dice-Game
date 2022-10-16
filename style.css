@@ -1,0 +1,105 @@
+* {
+	font-family: 'Poppins', sans-serif;
+}
+:root{
+  --bodyColor : #8ec5fc; 
+  --containerColor : #ffffff;
+  --buttonTogglerColor: #2d3436;
+  --themeTogglerColor : white;
+  --textColor : black;
+  --boxColor: #d8afff;
+  --buttonbackColor: deepskyblue;
+  --buttonTextColor: black;
+ 
+
+
+}
+.darkMode{
+ --bodyColor : #2d3436; 
+ --containerColor: #636e72;
+ --buttonTogglerColor: #8ec5fc;
+ --themeTogglerColor : black;
+ --textColor : white;
+ --boxColor: #fd79a8;
+ --buttonbackColor: #b2bec3;
+ --buttonTextColor: black;
+
+
+
+
+}
+.themToggler{
+  border: none;
+  border-radius: 50%;
+  background-color: var(--buttonTogglerColor);
+  color: var(--themeTogglerColor);
+  padding: 5px 10px;
+  position: absolute;
+  top: 1rem;
+  right: .5rem;
+  transition: .3s;
+}
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--bodyColor);
+	height: 100vh;
+  transition: .3s;
+}
+.btn {
+	position: absolute;
+	top: 70%;
+	right: 50%;
+	transform: translateX(50%);
+	border: none;
+	border-radius: 6px;
+	background-color: var(--buttonbackColor);
+  color: var(--buttonTextColor);
+	padding: 15px 25px;
+  font-weight: bold;
+}
+.btn:hover , .btn:focus {
+	background-color: darkblue;
+	color: #FFF;
+  transition: .3s;
+}
+#resetBtn {
+	display: none;
+}
+.container {
+  box-shadow: 0 0 5px 3px gray;
+	position: relative;
+	border-radius: 5%;
+	background-color: var(--containerColor);
+	padding: 3%;
+	width: 50%;
+	max-width: 400px;
+	height: 400px;
+}
+#message {
+	text-align: center;
+}
+.players {
+	display: flex;
+	justify-content: space-evenly;
+}
+.dice {
+	margin: 0 auto;
+	border-radius: 5%;
+	background-color: var(--boxColor);
+	padding: 0;
+	width: 80px;
+	height: 80px;
+	text-align: center;
+	line-height: 2;
+	font-size: 40px;
+	font-weight: 700;
+  transition: .3s;
+}
+.active {
+	box-shadow: 0 0 8px 5px gray;
+}
+.texts{
+  color: var(--textColor);
+}
