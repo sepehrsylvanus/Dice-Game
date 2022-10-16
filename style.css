@@ -33,7 +33,7 @@
   border-radius: 50%;
   background-color: var(--buttonTogglerColor);
   color: var(--themeTogglerColor);
-  padding: 5px 10px;
+  padding: 0.3125rem 0.625rem;
   position: absolute;
   top: 1rem;
   right: .5rem;
@@ -56,7 +56,7 @@ body {
 	border-radius: 6px;
 	background-color: var(--buttonbackColor);
   color: var(--buttonTextColor);
-	padding: 15px 25px;
+	padding: 0.9375rem 1.5625rem;
   font-weight: bold;
 }
 .btn:hover , .btn:focus {
@@ -74,8 +74,8 @@ body {
 	background-color: var(--containerColor);
 	padding: 3%;
 	width: 50%;
-	max-width: 400px;
-	height: 400px;
+	max-width: 25rem;
+	height: 25rem;
 }
 #message {
 	text-align: center;
@@ -89,11 +89,11 @@ body {
 	border-radius: 5%;
 	background-color: var(--boxColor);
 	padding: 0;
-	width: 80px;
-	height: 80px;
+	width: 5rem;
+	height: 5rem;
 	text-align: center;
 	line-height: 2;
-	font-size: 40px;
+	font-size: 2.5rem;
 	font-weight: 700;
   transition: .3s;
 }
@@ -102,4 +102,23 @@ body {
 }
 .texts{
   color: var(--textColor);
+}
+@media screen and (min-width : 320px) and (max-width : 750px) {
+  .texts{
+    font-size: 1rem;
+    
+  }
+  .players{
+    display: flex;
+    flex-direction: column;
+  }
+  .btn{
+    margin-top: 2rem;
+  }
+  #message{
+    font-size:.7rem ;
+  }
+  .themToggler{
+    font-size: .7rem;
+  }
 }

@@ -11,9 +11,9 @@ const player1Dice = document.getElementById('player1Dice')
 const player2Dice = document.getElementById('player2Dice')
 const dices = [player1Dice, player2Dice]
 const themeChanger = document.getElementById('themeToggler')
-function turnOff(){
-document.getElementById('body').classList.toggle('darkMode')
-document.getElementById('themeToggler').classList.toggle('darkMode')
+function turnOff() {
+    document.getElementById('body').classList.toggle('darkMode')
+    document.getElementById('themeToggler').classList.toggle('darkMode')
 }
 
 
@@ -48,12 +48,12 @@ rollBtn.addEventListener('click', function () {
     }
     player1Turn = !player1Turn
 
-    if(player1Score >=20){
+    if (player1Score >= 20) {
         showWinner(1)
-    }else if(player2Score >=20){
+    } else if (player2Score >= 20) {
         showWinner(2)
     }
-    function showWinner(playerNum){
+    function showWinner(playerNum) {
         message.textContent = `player ${playerNum} won`
         rollBtn.style.display = 'none'
         resetBtn.style.display = 'block'
@@ -62,12 +62,12 @@ rollBtn.addEventListener('click', function () {
 
 
 })
-function reset(){
+function reset() {
     player1Turn = true
     message.textContent = `Player 1 Turn`
     player1Dice.textContent = ''
     player2Dice.textContent = ''
-    player1Score =  0
+    player1Score = 0
     player2Score = 0
     player1Scoreboard.textContent = 0
     player2Scoreboard.textContent = 0
@@ -78,4 +78,4 @@ function reset(){
 
 }
 resetBtn.addEventListener('click', reset)
-themeChanger.addEventListener('click',turnOff )
+themeChanger.addEventListener('click', turnOff)
